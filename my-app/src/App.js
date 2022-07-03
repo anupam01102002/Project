@@ -1,6 +1,7 @@
 import ExpenseItem from "./Components/ExpenseItem";
 import "./App.css";
 import Card from './Components/Card';
+import NewExpense from "./Components/NewExpense";
 
 function App() {
   const expenses = [
@@ -30,7 +31,7 @@ function App() {
   ];
   return (
     <Card className="expenses">
-      <h1>Hello! Mate</h1>
+      <NewExpense></NewExpense>
       <ExpenseItem
         title={expenses[0].title}
         date={expenses[0].date}
